@@ -1,0 +1,97 @@
+{
+	"name": "blobtokusto",
+	"properties": {
+		"activities": [
+			{
+				"name": "BlobToADF",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true
+						}
+					},
+					"sink": {
+						"type": "AzureDataExplorerSink",
+						"ingestionMappingName": "TestMapping"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['row']"
+								},
+								"sink": {
+									"name": "row",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['cells'][0]['fam']"
+								},
+								"sink": {
+									"name": "fam",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['cells'][0]['qual']"
+								},
+								"sink": {
+									"name": "qual",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['cells'][0]['val']"
+								},
+								"sink": {
+									"name": "val",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['cells'][0]['ts']"
+								},
+								"sink": {
+									"name": "ts",
+									"type": "Int64"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Json1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureDataExplorerTable1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
