@@ -189,7 +189,7 @@
 							},
 							"sink": {
 								"type": "AzureDataExplorerSink",
-								"ingestionMappingName": "TestMapping"
+								"ingestionMappingName": ""
 							},
 							"enableStaging": false,
 							"translator": {
