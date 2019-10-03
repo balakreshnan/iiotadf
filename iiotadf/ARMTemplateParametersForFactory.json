@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "iiotadf"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataExplorer1_servicePrincipalKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://iiotstoragebb.dfs.core.windows.net"
+		},
+		"AzureDataExplorer1_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"AzureDataExplorer1_properties_typeProperties_servicePrincipalId": {
+			"value": "da4ee700-880e-4026-b700-5d77491cdfb5"
+		},
+		"AzureDataExplorer1_properties_typeProperties_database": {
+			"value": "jemtsdb"
+		}
+	}
+}
