@@ -8,14 +8,17 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_accountKey": {
-			"value": ""
-		},
 		"AzureDataExplorer1_servicePrincipalKey": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://iiotstoragebb.dfs.core.windows.net"
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"diemodeltraining_accountKey": {
+			"value": ""
+		},
+		"milwaukeetooldata_accountKey": {
+			"value": ""
 		},
 		"AzureDataExplorer1_properties_typeProperties_tenant": {
 			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
@@ -25,6 +28,15 @@
 		},
 		"AzureDataExplorer1_properties_typeProperties_database": {
 			"value": "jemtsdb"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://iiotstoragebb.dfs.core.windows.net"
+		},
+		"diemodeltraining_properties_typeProperties_url": {
+			"value": "https://diemodeltraining.dfs.core.windows.net"
+		},
+		"milwaukeetooldata_properties_typeProperties_url": {
+			"value": "https://milwaukeetoolsdata.dfs.core.windows.net"
 		},
 		"containerUri": {
 			"value": ""
