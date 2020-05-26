@@ -1,0 +1,17 @@
+{
+	"name": "diemodeltraining",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "diemodeltraining",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "design-research-files"
+			}
+		}
+	}
+}
