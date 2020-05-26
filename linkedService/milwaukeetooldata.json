@@ -1,0 +1,12 @@
+{
+	"name": "milwaukeetooldata",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://milwaukeetoolsdata.dfs.core.windows.net",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIklJT1RBREZfYmIyMjI1ZDktYWI1YS00Nzk3LThmMDMtZWI1OWJiNDQwYjY3Ig0KfQ=="
+		}
+	}
+}
